@@ -4,7 +4,10 @@
 // Text
 //
 
-.text-monospace { font-family: $font-family-monospace; }
+// .text-monospace { font-family: $font-family-monospace; }
+.text-monserrat { font-family: $font-family-montserrat }
+.text-open-sans { font-family: $font-family-open-sans }
+.text-roboto { font-family: $font-family-roboto }
 
 // Alignment
 
@@ -44,9 +47,9 @@
 
 .text-white { color: $white !important; }
 
-@each $color, $value in $theme-colors {
-  @include text-emphasis-variant(".text-#{$color}", $value);
-}
+// @each $color, $value in $theme-colors {
+//   @include text-emphasis-variant(".text-#{$color}", $value);
+// }
 
 .text-body { color: $body-color !important; }
 .text-muted { color: $text-muted !important; }

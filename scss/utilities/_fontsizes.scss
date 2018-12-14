@@ -1,0 +1,15 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+      $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  
+      .f#{$infix}-1   { font-size: $font-size-base * 0.5; }
+      .f#{$infix}-2   { font-size: $font-size-base * 0.75; }
+      .f#{$infix}-3   { font-size: $font-size-base * 1; }
+      .f#{$infix}-4   { font-size: $font-size-base * 1.25; }
+      .f#{$infix}-5   { font-size: $font-size-base * 1.5; }
+      .f#{$infix}-6   { font-size: $font-size-base * 1.75; }
+      .f#{$infix}-7   { font-size: $font-size-base * 2; }
+      .f#{$infix}-8   { font-size: $font-size-base * 2.5; }
+    }
+  }
+  

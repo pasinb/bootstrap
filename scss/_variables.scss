@@ -44,6 +44,8 @@ $yellow:  #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
+$black: #4b514c;
+$gray: #d4d4d4;
 
 $colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -79,14 +81,17 @@ $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
 $theme-colors: map-merge(
   (
-    "primary":    $primary,
-    "secondary":  $secondary,
-    "success":    $success,
-    "info":       $info,
-    "warning":    $warning,
-    "danger":     $danger,
-    "light":      $light,
-    "dark":       $dark
+    // "primary":    $primary,
+    // "secondary":  $secondary,
+    // "success":    $success,
+    // "info":       $info,
+    // "warning":    $warning,
+    // "danger":     $danger,
+    // "light":      $light,
+    // "dark":       $dark
+    "gray":       $gray,
+    "black":      $black,
+    "green":      $green
   ),
   $theme-colors
 );
@@ -134,7 +139,9 @@ $spacers: map-merge(
     2: ($spacer * .5),
     3: $spacer,
     4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    5: ($spacer * 3),
+    6: ($spacer * 4.5),
+    7: ($spacer * 6)
   ),
   $spacers
 );
@@ -193,7 +200,7 @@ $grid-breakpoints: map-merge(
     sm: 576px,
     md: 768px,
     lg: 992px,
-    xl: 1200px
+    // xl: 1200px
   ),
   $grid-breakpoints
 );
@@ -213,7 +220,7 @@ $container-max-widths: map-merge(
     sm: 540px,
     md: 720px,
     lg: 960px,
-    xl: 1140px
+    // xl: 1140px
   ),
   $container-max-widths
 );
@@ -278,6 +285,11 @@ $embed-responsive-aspect-ratios: join(
 $font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 $font-family-base:            $font-family-sans-serif !default;
+
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-open-sans: 'Open Sans', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
+
 // stylelint-enable value-keyword-case
 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
