@@ -131,6 +131,20 @@
     return [].slice.call(nodeList);
   };
 
+  var isVisible = function isVisible(element) {
+    if (!element) {
+      return false;
+    }
+
+    if (element.style && element.parentNode && element.parentNode.style) {
+      var elementStyle = getComputedStyle(element);
+      var parentNodeStyle = getComputedStyle(element.parentNode);
+      return elementStyle.display !== 'none' && parentNodeStyle.display !== 'none' && elementStyle.visibility !== 'hidden';
+    }
+
+    return false;
+  };
+
   var noop = function noop() {
     return function () {};
   };
@@ -576,7 +590,7 @@
         return;
       }
 
-      var items = makeArray(SelectorEngine.find(Selector.VISIBLE_ITEMS, parent));
+      var items = makeArray(SelectorEngine.find(Selector.VISIBLE_ITEMS, parent)).filter(isVisible);
 
       if (!items.length) {
         return;

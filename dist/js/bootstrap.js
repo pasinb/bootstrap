@@ -213,7 +213,9 @@
     }
 
     if (element.style && element.parentNode && element.parentNode.style) {
-      return element.style.display !== 'none' && element.parentNode.style.display !== 'none' && element.style.visibility !== 'hidden';
+      var elementStyle = getComputedStyle(element);
+      var parentNodeStyle = getComputedStyle(element.parentNode);
+      return elementStyle.display !== 'none' && parentNodeStyle.display !== 'none' && elementStyle.visibility !== 'hidden';
     }
 
     return false;
@@ -2727,7 +2729,7 @@
         return;
       }
 
-      var items = makeArray(SelectorEngine.find(Selector$4.VISIBLE_ITEMS, parent));
+      var items = makeArray(SelectorEngine.find(Selector$4.VISIBLE_ITEMS, parent)).filter(isVisible);
 
       if (!items.length) {
         return;
