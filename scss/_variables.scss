@@ -399,15 +399,14 @@ $font-size-base:              1rem !default; // Assumes the browser default, typ
 $font-sizes: () !default;
 $font-sizes: map-merge(
   (
-    0: 0,
-    1: $font-size-base * .5,
-    2: $font-size-base * .75,
-    3: $font-size-base,
-    4: $font-size-base * 1.25,
-    5: $font-size-base * 1.5,
-    6: $font-size-base * 1.75,
-    7: $font-size-base * 2,
-    8: $font-size-base * 2.5,
+    050: $font-size-base * .5,
+    075: $font-size-base * .75,
+    100: $font-size-base,
+    125: $font-size-base * 1.25,
+    150: $font-size-base * 1.5,
+    175: $font-size-base * 1.75,
+    200: $font-size-base * 2,
+    250: $font-size-base * 2.5,
   ),
   $font-sizes
 );
