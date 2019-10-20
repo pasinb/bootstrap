@@ -243,7 +243,10 @@ $spacers: map-merge(
     2: $spacer * .5,
     3: $spacer,
     4: $spacer * 1.5,
-    5: $spacer * 3,
+    5: $spacer * 2,
+    6: $spacer * 3,
+    7: $spacer * 4.5,
+    8: $spacer * 6,
   ),
   $spacers
 );
@@ -315,7 +318,7 @@ $container-max-widths: (
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-columns:                12 !default;
+$grid-columns:                24 !default;
 $grid-gutter-width:           30px !default;
 $grid-row-columns:            6 !default;
 
@@ -392,6 +395,23 @@ $font-family-base:            $font-family-sans-serif !default;
 // $font-size-base effects the font size of the body text
 $font-size-root:              null !default;
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
+
+$font-sizes: () !default;
+$font-sizes: map-merge(
+  (
+    0: 0,
+    1: $font-size-base * .5,
+    2: $font-size-base * .75,
+    3: $font-size-base,
+    4: $font-size-base * 1.25,
+    5: $font-size-base * 1.5,
+    6: $font-size-base * 1.75,
+    7: $font-size-base * 2,
+    8: $font-size-base * 2.5,
+  ),
+  $font-sizes
+);
+
 $font-size-lg:                $font-size-base * 1.25 !default;
 $font-size-sm:                $font-size-base * .875 !default;
 
