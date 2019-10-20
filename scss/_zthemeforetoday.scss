@@ -1,0 +1,20 @@
+$custom-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$custom-colors: map-merge(
+  (
+    "white": #ffffff,
+    "black": #000000,
+    "blue": #163896,
+    "dark-blue": #0d1c47
+  ),
+  $custom-colors
+);
+
+@each $colorName, $colorValue in $custom-colors {
+  .text-#{$colorName} {
+    color: $colorValue;
+  }
+  .bg-#{$colorName} {
+    background-color: $colorValue;
+  }
+}

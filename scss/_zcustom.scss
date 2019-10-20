@@ -4,9 +4,20 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
     @each $spacerNum, $spacerValue in $spacers {
       .cp#{$infix}-#{$spacerNum} {
-        > *:not(first-child):not(last-child),
-        > *.edge {
+        > *:not(first-child):not(last-child) {
           padding: $spacerValue;
+        }
+      }
+      .cpx#{$infix}-#{$spacerNum} {
+        > *:not(first-child):not(last-child) {
+          padding-left: $spacerValue;
+          padding-right: $spacerValue;
+        }
+      }
+      .cpy#{$infix}-#{$spacerNum} {
+        > *:not(first-child):not(last-child) {
+          padding-top: $spacerValue;
+          padding-bottom: $spacerValue;
         }
       }
     }
