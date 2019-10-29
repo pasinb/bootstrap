@@ -3,21 +3,24 @@
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
     @each $spacerNum, $spacerValue in $spacers {
-      .cp#{$infix}-#{$spacerNum} {
-        > *:not(first-child):not(last-child) {
-          padding: $spacerValue;
-        }
-      }
-      .cpx#{$infix}-#{$spacerNum} {
-        > *:not(first-child):not(last-child) {
+      .cpl#{$infix}-#{$spacerNum} {
+        > *:not(:first-child) {
           padding-left: $spacerValue;
-          padding-right: $spacerValue;
         }
       }
-      .cpy#{$infix}-#{$spacerNum} {
-        > *:not(first-child):not(last-child) {
+      .cpt#{$infix}-#{$spacerNum} {
+        > *:not(:first-child) {
           padding-top: $spacerValue;
-          padding-bottom: $spacerValue;
+        }
+      }
+      .cml#{$infix}-#{$spacerNum} {
+        > *:not(:first-child) {
+          margin-left: $spacerValue;
+        }
+      }
+      .cmt#{$infix}-#{$spacerNum} {
+        > *:not(:first-child) {
+          margin-top: $spacerValue;
         }
       }
     }
@@ -34,4 +37,17 @@
       }
     }
   }
+}
+
+//z-index
+.z-2 {
+  z-index: 2;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
+.z-4 {
+  z-index: 4;
 }

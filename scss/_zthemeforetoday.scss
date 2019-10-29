@@ -1,11 +1,11 @@
 $custom-colors: () !default;
-// stylelint-disable-next-line scss/dollar-variable-default
 $custom-colors: map-merge(
   (
     "white": #ffffff,
     "black": #000000,
     "blue": #163896,
-    "dark-blue": #0d1c47
+    "dark-blue": #0d1c47,
+    "orange": #eb5400
   ),
   $custom-colors
 );
