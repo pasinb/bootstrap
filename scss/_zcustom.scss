@@ -27,11 +27,40 @@
   }
 }
 
-// font-size
+// // font-size
+// $font-sizes: () !default;
+// $font-sizes: map-merge(
+//   (
+//     050: $font-size-base * 0.5,
+//     075: $font-size-base * 0.75,
+//     0875: $font-size-base * 0.875,
+//     100: $font-size-base,
+//     1125: $font-size-base * 1.125,
+//     125: $font-size-base * 1.25,
+//     1375: $font-size-base * 1.375,
+//     150: $font-size-base * 1.5,
+//     1625: $font-size-base * 1.625,
+//     175: $font-size-base * 1.75,
+//     1875: $font-size-base * 1.875,
+//     200: $font-size-base * 2,
+//     225: $font-size-base * 2.25,
+//     250: $font-size-base * 2.5,
+//     275: $font-size-base * 2.75,
+//     300: $font-size-base * 3,
+//     325: $font-size-base * 3.25,
+//     350: $font-size-base * 3.5,
+//     375: $font-size-base * 3.75,
+//     400: $font-size-base * 4,
+//     500: $font-size-base * 5,
+//     600: $font-size-base * 6
+//   ),
+//   $font-sizes
+// );
+
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-    @each $fontSizeNum, $fontSizeValue in $font-sizes {
+    @each $fontSizeNum, $fontSizeValue in $spacers {
       .f#{$infix}-#{$fontSizeNum} {
         font-size: $fontSizeValue;
       }
@@ -51,3 +80,83 @@
 .z-4 {
   z-index: 4;
 }
+
+// // percent wh
+// $wh-size-base: 1;
+// $wh-sizes: () !default;
+// $wh-sizes: map-merge(
+//   (
+//     5: $wh-size-base * 0.05,
+//     10: $wh-size-base * 0.1,
+//     15: $wh-size-base * 0.15,
+//     20: $wh-size-base * 0.2,
+//     25: $wh-size-base * 0.25,
+//     30: $wh-size-base * 0.3,
+//     35: $wh-size-base * 0.35,
+//     40: $wh-size-base * 0.4,
+//     45: $wh-size-base * 0.45,
+//     50: $wh-size-base * 0.5,
+//     55: $wh-size-base * 0.55,
+//     60: $wh-size-base * 0.6,
+//     65: $wh-size-base * 0.65,
+//     70: $wh-size-base * 0.7,
+//     75: $wh-size-base * 0.75,
+//     80: $wh-size-base * 0.8,
+//     85: $wh-size-base * 0.85,
+//     90: $wh-size-base * 0.9,
+//     95: $wh-size-base * 0.95,
+//     100: $wh-size-base * 1
+//   ),
+//   $wh-sizes
+// );
+
+// @each $breakpoint in map-keys($grid-breakpoints) {
+//   @include media-breakpoint-up($breakpoint) {
+//     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+//     @each $whSizeNum, $whSizeValue in $font-sizes {
+//       .w#{$infix}-#{$whSizeNum} {
+//         font-size: $whSizeValue;
+//       }
+//     }
+//   }
+// }
+
+// // fixed wh
+// $wh-size-base: 1rem;
+// $wh-sizes: () !default;
+// $wh-sizes: map-merge(
+//   (
+//     5: $wh-size-base * 0.05,
+//     10: $wh-size-base * 0.1,
+//     15: $wh-size-base * 0.15,
+//     20: $wh-size-base * 0.2,
+//     25: $wh-size-base * 0.25,
+//     30: $wh-size-base * 0.3,
+//     35: $wh-size-base * 0.35,
+//     40: $wh-size-base * 0.4,
+//     45: $wh-size-base * 0.45,
+//     50: $wh-size-base * 0.5,
+//     55: $wh-size-base * 0.55,
+//     60: $wh-size-base * 0.6,
+//     65: $wh-size-base * 0.65,
+//     70: $wh-size-base * 0.7,
+//     75: $wh-size-base * 0.75,
+//     80: $wh-size-base * 0.8,
+//     85: $wh-size-base * 0.85,
+//     90: $wh-size-base * 0.9,
+//     95: $wh-size-base * 0.95,
+//     100: $wh-size-base * 1
+//   ),
+//   $wh-sizes
+// );
+
+// @each $breakpoint in map-keys($grid-breakpoints) {
+//   @include media-breakpoint-up($breakpoint) {
+//     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+//     @each $whSizeNum, $whSizeValue in $font-sizes {
+//       .w#{$infix}-#{$whSizeNum} {
+//         font-size: $whSizeValue;
+//       }
+//     }
+//   }
+// }

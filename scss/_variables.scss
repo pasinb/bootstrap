@@ -235,21 +235,39 @@ $spacers: map-merge(
   (
     0: 0,
     25: $spacer * 0.25,
-    50: $spacer * 0.5,
-    75: $spacer * 0.75,
+    050: $spacer * 0.5,
+    075: $spacer * 0.75,
+    0875: $spacer * 0.875,
     100: $spacer,
+    1125: $spacer * 1.125,
+    125: $spacer * 1.25,
+    1375: $spacer * 1.375,
     150: $spacer * 1.5,
+    1625: $spacer * 1.625,
+    175: $spacer * 1.75,
+    1875: $spacer * 1.875,
     200: $spacer * 2,
+    225: $spacer * 2.25,
     250: $spacer * 2.5,
+    275: $spacer * 2.75,
     300: $spacer * 3,
+    325: $spacer * 3.25,
     350: $spacer * 3.5,
+    375: $spacer * 3.75,
     400: $spacer * 4,
-    450: $spacer * 4.5,
+    425: $spacer * 4.25,
+    450: $spacer * 4.4,
+    475: $spacer * 4.75,
     500: $spacer * 5,
+    550: $spacer * 5.5,
     600: $spacer * 6,
+    650: $spacer * 6.5,
     700: $spacer * 7,
+    750: $spacer * 7.5,
     800: $spacer * 8,
+    850: $spacer * 8.5,
     900: $spacer * 9,
+    950: $spacer * 9.5,
     1000: $spacer * 10
   ),
   $spacers
@@ -292,7 +310,8 @@ $paragraph-margin-bottom: 1rem !default;
 
 $grid-breakpoints: (
   xs: 0,
-  sm: 576px,
+  // se: 320px,
+    sm: 576px,
   md: 768px,
   lg: 992px,
   xl: 1200px
@@ -397,36 +416,17 @@ $font-family-base: $font-family-sans-serif !default;
 $font-size-root: null !default;
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 
-$font-sizes: () !default;
-$font-sizes: map-merge(
-  (
-    050: $font-size-base * 0.5,
-    075: $font-size-base * 0.75,
-    100: $font-size-base,
-    125: $font-size-base * 1.25,
-    150: $font-size-base * 1.5,
-    175: $font-size-base * 1.75,
-    200: $font-size-base * 2,
-    250: $font-size-base * 2.5,
-    300: $font-size-base * 3,
-    350: $font-size-base * 3.5,
-    400: $font-size-base * 4,
-    450: $font-size-base * 4.5,
-    500: $font-size-base * 5,
-    550: $font-size-base * 5.5,
-    600: $font-size-base * 6
-  ),
-  $font-sizes
-);
-
 $font-size-lg: $font-size-base * 1.25 !default;
 $font-size-sm: $font-size-base * 0.875 !default;
 
 $font-weight-lighter: lighter !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
+$font-weight-medium: 500 !default;
+$font-weight-semi: 600 !default;
 $font-weight-bold: 700 !default;
-$font-weight-bolder: bolder !default;
+$font-weight-bolder: 800 !default;
+$font-weight-black: 900 !default;
 
 $font-weight-base: $font-weight-normal !default;
 
