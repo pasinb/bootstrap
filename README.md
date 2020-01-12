@@ -10,9 +10,59 @@
 
 ## Change column count from 12 to 24
 
-## Change all spacer units (p-1, p-2, ...) to p-25, p-50, p-500 (25 = 0.25rem, 50 = 0.5rem, 500 = 5rem)
+## Change all spacer units (p-1, p-2, ...) to p-0-25, p-0-5, p-5 (25 = 0.25rem, 50 = 0.5rem, 500 = 5rem)
 
 ## Available spacers:
+
+- 0 = 0rem
+- 0-125 = 0.125rem
+- 0-25 = 0.25rem
+- 0-375 = 0.375rem
+- 0-50 = 0.5rem
+- 0-625 = 0.625rem
+- 0-75 = 0.75rem
+- 0-875 = 0.875rem
+- 1 = 1rem
+- 1-125 = 1.125rem
+- 1-25 = 1.25rem
+- 1-375 = 1.375rem
+- 1-5 = 1.5rem
+- 1-625 = 1.625rem
+- 1-75 = 1.75rem
+- 1-875 = 1.875rem
+- 2 = 2rem
+- 2-25 = 2.25rem
+- 2-5 = 2.5rem
+- 2-75 = 2.75rem
+- 3 = 3rem
+- 3-25 = 3.25rem
+- 3-5 = 3.5rem
+- 3-75 = 3.75rem
+- 4 = 4rem
+- 4-25 = 4.25rem
+- 4-5 = 4.4rem
+- 4-75 = 4.75rem
+- 5 = 5rem
+- 5-25 = 5.25rem
+- 5-5 = 5.5rem
+- 5-75 = 5.75rem
+- 6 = 6rem
+- 6-25 = 6.25rem
+- 6-5 = 6.5rem
+- 6-75 = 6.75rem
+- 7 = 7rem
+- 7-25 = 7.25rem
+- 7-5 = 7.5rem
+- 7-75 = 7.75rem
+- 8 = 8rem
+- 8-25 = 8.25rem
+- 8-5 = 8.5rem
+- 8-75 = 8.75rem
+- 9 = 9rem
+- 9-25 = 9.25rem
+- 9-5 = 9.5rem
+- 9-75 = 9.75rem
+- 10 = 1rem
 
 - 25 = .25rem
 - 50 = .5rem
