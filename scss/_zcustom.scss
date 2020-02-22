@@ -30,7 +30,7 @@
 // border-radius
 @for $i from 1 through 10 {
   .br-#{$i * 2} {
-    border-radius: $i * 2 !important;
+    border-radius: #{$i * 2}px !important;
   }
 }
 
@@ -40,7 +40,7 @@
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
     @each $fontSizeNum, $fontSizeValue in $spacers {
       .f#{$infix}-#{$fontSizeNum} {
-        font-size: $fontSizeValue !important;
+        font-size: #{$fontSizeValue} !important;
       }
     }
   }
@@ -49,7 +49,7 @@
 //z-index
 @for $i from 1 through 10 {
   .z-#{$i} {
-    z-index: $i !important;
+    z-index: #{$i} !important;
   }
 }
 
