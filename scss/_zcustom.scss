@@ -30,7 +30,7 @@
 // border-radius
 @for $i from 1 through 10 {
   .br-#{$i * 2} {
-    border-radius: $i * 2;
+    border-radius: $i * 2 !important;
   }
 }
 
@@ -49,7 +49,7 @@
 //z-index
 @for $i from 1 through 10 {
   .z-#{$i} {
-    z-index: $i;
+    z-index: $i !important;
   }
 }
 
