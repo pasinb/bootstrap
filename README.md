@@ -1,18 +1,16 @@
 # Fork summary:
 
-**Forked from bootstrap at 8d56c19b5509ef5b6358ee4b646a80bdffbe7396 (Oct 19 2019)**
+**Forked from bootstrap at 8d56c19b5509ef5b6358ee4b646a80bdffbe7396 on Oct 19 2019**
 
 **Due to large generated CSS size, this is intended to be used in conjunction with tools that can trim unused CSS like purgeCss**
 
 **Only focused on bootstrap-grid**
 
-# Change list:
+# Changes:
 
-## Change column count from 12 to 24
+Change column count from 12 to 24
 
-## Change all spacer units (p-1, p-2, ...) to p-0-25, p-0-5, p-5 (25 = 0.25rem, 50 = 0.5rem, 500 = 5rem)
-
-## Available spacers:
+All spacer units changed. Available spacers:
 
 - 0 = 0rem
 - 0-125 = 0.125rem
@@ -64,51 +62,21 @@
 - 9-75 = 9.75rem
 - 10 = 1rem
 
-- 25 = .25rem
-- 50 = .5rem
-- 75 = .75rem
-- 875 = .875rem
-- 100 = 1rem
-- 1125 = 1.125rem
-- 125 = 1.25rem
-- 1375 = 1.375rem
-- 150 = 1.50rem
-- 1625 = 1.625rem
-- 175 = 1.75rem
-- 1875 = 1.875rem
-- 200 = 2rem
-- 225 = 2.25rem
-- 250 = 2.50rem
-- 275 = 2.75rem
-- 300 = 3rem
-- 325 = 3.25rem
-- 350 = 3.50rem
-- 375 = 3.75rem
-- 400 = 4rem
-- 450 = 4.50rem
-- 500 = 5rem
-- 550 = 5.50rem
-- 600 = 6rem
-- 700 = 7rem
-- 800 = 8rem
-- 900 = 9rem
-- 1000 = 10rem
+Add font-size classes, use regular spacer units ( f-5, f-md-5-25, f-sm-1-25 )
 
-## Add font-size classes, use regular spacer units ( f-1125, f-md-1125, f-sm-50 )
+Add cpl, cpt, cml, cmt classes ( child padding/margin left/top)
 
-## Add cpl, cpt, cml, cmt classes ( child padding/margin left/top)
+- will make all child **(except first)** have padding/margin
+- Ex: cpt-5 (All non-first child have 5rem padding top)
 
-- will make all child (except first) have padding/margin
-- Ex: cpt-500 (All non-first child have 5rem padding top), cmt-md-200
-
-## Add in classes that originally available in bootstrap (non-grid version) only
+Add in classes that were available in original bootstrap but not in bootstrap-grid
 
 - Add width / height classes ( w-100, vw-100, ... )
 - Add text-align classes ( text-md-center, ... )
 - Add position classes ( position-absolute, ... )
 - Add overflow classes ( overflow-auto, ... )
 
-## Add missing font-weight classes ( semi, bolder, black )
+Add missing font-weight classes ( semi, bolder, black )
 
 - Ex: font-weight-md-semi
 
