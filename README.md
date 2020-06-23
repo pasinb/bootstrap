@@ -80,6 +80,14 @@ Add missing font-weight classes ( semi, bolder, black )
 
 - Ex: font-weight-md-semi
 
+TODO documentation for:
+
+Add row gutter classes
+Add media print classes for margin and padding
+Add basic display grid classes
+  - column/row start/end
+
+
 <p align="center">
   <a href="https://getbootstrap.com/">
     <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" alt="Bootstrap logo" width="72" height="72">
