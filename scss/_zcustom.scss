@@ -65,6 +65,25 @@
   }
 }
 
+// grid stuff
+.d-grid {
+  display: grid;
+}
+@for $i from 1 through 10 {
+  .gcs-#{$i} {
+    grid-column-start: $i;
+  }
+  .gce-#{$i} {
+    grid-column-end: $i;
+  }
+  .grs-#{$i} {
+    grid-row-start: $i;
+  }
+  .gre-#{$i} {
+    grid-row-end: $i;
+  }
+}
+
 // // percent wh
 // $wh-size-base: 1;
 // $wh-sizes: () !default;
