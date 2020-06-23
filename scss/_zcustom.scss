@@ -27,6 +27,18 @@
   }
 }
 
+// row spacers
+@each $spacerNum, $spacerValue in $spacers {
+  .row.row-#{$spacerNum} {
+    margin-left: -$spacerValue;
+    margin-right: -$spacerValue;
+    > [class*="col-"] {
+      padding-right: $spacerValue;
+      padding-left: $spacerValue;
+    }
+  }
+}
+
 // border-radius
 @for $i from 1 through 10 {
   .br-#{$i * 2} {
