@@ -82,10 +82,12 @@ Add missing font-weight classes ( semi, bolder, black )
 
 TODO documentation for:
 
-Add row gutter classes
-Add media print classes for margin and padding
-Add basic display grid classes
+- Add row gutter classes
+- Add media print classes for margin and padding
+- Add basic display grid classes
   - column/row start/end
+- more granular rem update
+- fp classes update
 
 
 <p align="center">

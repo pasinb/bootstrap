@@ -58,6 +58,18 @@
   }
 }
 
+// font-size rem
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    @for $i from 1 through 50 {
+      .fp#{$infix}-#{$i} {
+        font-size: #{$i / 16}rem !important;
+      }
+    }
+  }
+}
+
 //z-index
 @for $i from 1 through 10 {
   .z-#{$i} {
@@ -83,83 +95,3 @@
     grid-row-end: $i;
   }
 }
-
-// // percent wh
-// $wh-size-base: 1;
-// $wh-sizes: () !default;
-// $wh-sizes: map-merge(
-//   (
-//     5: $wh-size-base * 0.05,
-//     10: $wh-size-base * 0.1,
-//     15: $wh-size-base * 0.15,
-//     20: $wh-size-base * 0.2,
-//     25: $wh-size-base * 0.25,
-//     30: $wh-size-base * 0.3,
-//     35: $wh-size-base * 0.35,
-//     40: $wh-size-base * 0.4,
-//     45: $wh-size-base * 0.45,
-//     50: $wh-size-base * 0.5,
-//     55: $wh-size-base * 0.55,
-//     60: $wh-size-base * 0.6,
-//     65: $wh-size-base * 0.65,
-//     70: $wh-size-base * 0.7,
-//     75: $wh-size-base * 0.75,
-//     80: $wh-size-base * 0.8,
-//     85: $wh-size-base * 0.85,
-//     90: $wh-size-base * 0.9,
-//     95: $wh-size-base * 0.95,
-//     100: $wh-size-base * 1
-//   ),
-//   $wh-sizes
-// );
-
-// @each $breakpoint in map-keys($grid-breakpoints) {
-//   @include media-breakpoint-up($breakpoint) {
-//     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-//     @each $whSizeNum, $whSizeValue in $font-sizes {
-//       .w#{$infix}-#{$whSizeNum} {
-//         font-size: $whSizeValue;
-//       }
-//     }
-//   }
-// }
-
-// // fixed wh
-// $wh-size-base: 1rem;
-// $wh-sizes: () !default;
-// $wh-sizes: map-merge(
-//   (
-//     5: $wh-size-base * 0.05,
-//     10: $wh-size-base * 0.1,
-//     15: $wh-size-base * 0.15,
-//     20: $wh-size-base * 0.2,
-//     25: $wh-size-base * 0.25,
-//     30: $wh-size-base * 0.3,
-//     35: $wh-size-base * 0.35,
-//     40: $wh-size-base * 0.4,
-//     45: $wh-size-base * 0.45,
-//     50: $wh-size-base * 0.5,
-//     55: $wh-size-base * 0.55,
-//     60: $wh-size-base * 0.6,
-//     65: $wh-size-base * 0.65,
-//     70: $wh-size-base * 0.7,
-//     75: $wh-size-base * 0.75,
-//     80: $wh-size-base * 0.8,
-//     85: $wh-size-base * 0.85,
-//     90: $wh-size-base * 0.9,
-//     95: $wh-size-base * 0.95,
-//     100: $wh-size-base * 1
-//   ),
-//   $wh-sizes
-// );
-
-// @each $breakpoint in map-keys($grid-breakpoints) {
-//   @include media-breakpoint-up($breakpoint) {
-//     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-//     @each $whSizeNum, $whSizeValue in $font-sizes {
-//       .w#{$infix}-#{$whSizeNum} {
-//         font-size: $whSizeValue;
-//       }
-//     }
-//   }
-// }
