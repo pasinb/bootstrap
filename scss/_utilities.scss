@@ -79,7 +79,7 @@ $utilities: map-merge(
       class: border,
       values: map-merge($theme-colors, (white: $white))
     ),
-    // Sizing utilities
+    // // Sizing utilities
     "width": (
       property: width,
       class: w,

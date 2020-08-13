@@ -8,66 +8,24 @@
 
 # Changes:
 
+.container class removed - since projects have their own .container
+
 Change column count from 12 to 24
 
-All spacer units changed. Available spacers:
+All spacer units changed. See _variables.scss
 
-- 0 = 0rem
-- 0-125 = 0.125rem
-- 0-25 = 0.25rem
-- 0-375 = 0.375rem
-- 0-50 = 0.5rem
-- 0-625 = 0.625rem
-- 0-75 = 0.75rem
-- 0-875 = 0.875rem
-- 1 = 1rem
-- 1-125 = 1.125rem
-- 1-25 = 1.25rem
-- 1-375 = 1.375rem
-- 1-5 = 1.5rem
-- 1-625 = 1.625rem
-- 1-75 = 1.75rem
-- 1-875 = 1.875rem
-- 2 = 2rem
-- 2-25 = 2.25rem
-- 2-5 = 2.5rem
-- 2-75 = 2.75rem
-- 3 = 3rem
-- 3-25 = 3.25rem
-- 3-5 = 3.5rem
-- 3-75 = 3.75rem
-- 4 = 4rem
-- 4-25 = 4.25rem
-- 4-5 = 4.4rem
-- 4-75 = 4.75rem
-- 5 = 5rem
-- 5-25 = 5.25rem
-- 5-5 = 5.5rem
-- 5-75 = 5.75rem
-- 6 = 6rem
-- 6-25 = 6.25rem
-- 6-5 = 6.5rem
-- 6-75 = 6.75rem
-- 7 = 7rem
-- 7-25 = 7.25rem
-- 7-5 = 7.5rem
-- 7-75 = 7.75rem
-- 8 = 8rem
-- 8-25 = 8.25rem
-- 8-5 = 8.5rem
-- 8-75 = 8.75rem
-- 9 = 9rem
-- 9-25 = 9.25rem
-- 9-5 = 9.5rem
-- 9-75 = 9.75rem
-- 10 = 1rem
+Add font-size (f), width (ww), height (hh) classes, use regular spacer unit
 
-Add font-size classes, use regular spacer units ( f-5, f-md-5-25, f-sm-1-25 )
+- Ex: f-16, f-md-16, ww-50, ww-xl-50
 
 Add cpl, cpt, cml, cmt classes ( child padding/margin left/top)
 
 - will make all child **(except first)** have padding/margin
 - Ex: cpt-5 (All non-first child have 5rem padding top)
+
+Variant of the above (ccpl, ccpt, ccml, ccmt) but apply to first child as well
+
+Row gutters class ( g-0 ) from Bootstrap 5, use spacer units
 
 Add in classes that were available in original bootstrap but not in bootstrap-grid
 
@@ -75,19 +33,23 @@ Add in classes that were available in original bootstrap but not in bootstrap-gr
 - Add text-align classes ( text-md-center, ... )
 - Add position classes ( position-absolute, ... )
 - Add overflow classes ( overflow-auto, ... )
+- white-space classes ( .text-wrap, .text-nowrap, ...)
 
 Add missing font-weight classes ( semi, bolder, black )
 
 - Ex: font-weight-md-semi
 
+Line height classes
+
+- Ex: lh-1-6 = line-height: 1.6, lh-md-1-8
+- Available values = 0.5 - 2-5, 0.1 increment
+
+
 TODO documentation for:
 
-- Add row gutter classes
 - Add media print classes for margin and padding
 - Add basic display grid classes
   - column/row start/end
-- more granular rem update
-- fp classes update
 
 
 <p align="center">
