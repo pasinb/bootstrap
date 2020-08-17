@@ -12,6 +12,7 @@
     padding-left: $gutter / 2;
   }
 
+
   @each $breakpoint in map-keys($breakpoints) {
     $infix: breakpoint-infix($breakpoint, $breakpoints);
 
@@ -21,6 +22,13 @@
         @extend %grid-column;
       }
     }
+
+    @each $str, $value in $columns-extra {
+      .col#{$infix}-#{$str} {
+        @extend %grid-column;
+      }
+    }
+
     .col#{$infix},
     .col#{$infix}-auto {
       @extend %grid-column;
@@ -50,12 +58,24 @@
         }
       }
 
+      @each $str, $value in $columns-extra {
+        .col#{$infix}-#{$str} {
+          @include make-col($value, $columns);
+        }
+      }
+
       // `$columns - 1` because offsetting by the width of an entire row isn't possible
       @for $i from 0 through ($columns - 1) {
         @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
           .offset#{$infix}-#{$i} {
             @include make-col-offset($i, $columns);
           }
+        }
+      }
+
+      @each $str, $value in $columns-extra {
+        .offset#{$infix}-#{$str} {
+          @include make-col-offset($value, $columns);
         }
       }
     }

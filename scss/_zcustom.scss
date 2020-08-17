@@ -24,22 +24,22 @@
         }
       }
       .ccpl#{$infix}-#{$spacerNum} {
-        > {
+        > * {
           padding-left: $spacerValue;
         }
       }
       .ccpt#{$infix}-#{$spacerNum} {
-        > {
+        > * {
           padding-top: $spacerValue;
         }
       }
       .ccml#{$infix}-#{$spacerNum} {
-        > {
+        > * {
           margin-left: $spacerValue;
         }
       }
       .ccmt#{$infix}-#{$spacerNum} {
-        > {
+        > * {
           margin-top: $spacerValue;
         }
       }

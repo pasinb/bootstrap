@@ -406,6 +406,14 @@ $grid-columns: 24 !default;
 $grid-gutter-width: 30px !default;
 $grid-row-columns: 6 !default;
 
+$columns-extra: () !default;
+$columns-extra: map-merge(
+  (
+    "4-8": 4.8,
+  ),
+  $columns-extra
+);
+
 // Container padding
 
 $container-padding-x: $grid-gutter-width / 2 !default;
