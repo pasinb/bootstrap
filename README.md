@@ -15,7 +15,6 @@ Change column count from 12 to 24
 Add col-4-8 - make col 1/5th width of row
 
 All spacer units changed:
-
 - Base on pixels but uses rem internally
 - Ex: pt-16 = padding-top: 1rem
 - Availble spacers:
@@ -24,11 +23,9 @@ All spacer units changed:
   - 100 - 500 (10 increment)
 
 Add font-size (f), width (ww), height (hh) classes, use regular spacer unit
-
 - Ex: f-16, f-md-20, ww-200, ww-xl-300
 
 Add cpl, cpt, cml, cmt classes ( child padding/margin left/top)
-
 - will make all child **(except first)** have padding/margin
 - Ex: cpt-50, cpt-md-100
 - Variant (ccpl, ccpt, ccml, ccmt) but apply to first child as well
@@ -36,7 +33,6 @@ Add cpl, cpt, cml, cmt classes ( child padding/margin left/top)
 Row gutters class ( Ex: g-0 ) ported from Bootstrap 5, use spacer units
 
 Add classes that were available in original bootstrap but not in bootstrap-grid
-
 - Add width / height classes ( w-100, vw-100, ... )
 - Add text-align classes ( text-md-center, ... )
 - Add position classes ( position-absolute, ... )
@@ -44,16 +40,21 @@ Add classes that were available in original bootstrap but not in bootstrap-grid
 - white-space classes ( .text-wrap, .text-nowrap, ...)
 
 Add missing font-weight classes ( semi, bolder, black )
-
 - Ex: font-weight-md-semi
 
-Line height classes
-
+Line height classes:
 - Ex: lh-1-6 = line-height: 1.6, lh-md-1-8
 - Available values = 0.5 - 2-5 (0.1 increment)
 
-TODO documentation for:
+Border radius classes (no responsive):
+- Ex: br-1 = border-radius: 1px;
+- Available values = 1 - 20 (1 increment)
 
+z-index classes (no responsive):
+- Ex: z-1
+- Available values = 1 - 10 (1 increment)
+
+TODO documentation for:
 - Add media print classes for margin and padding
 - Add basic display grid classes
   - column/row start/end
