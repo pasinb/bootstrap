@@ -6,28 +6,36 @@
 
 **Only focused on bootstrap-grid**
 
-# Changes:
+# Changes from original bootstrap-grid:
 
 .container class removed - since projects have their own .container
 
 Change column count from 12 to 24
 
-All spacer units changed. See _variables.scss
+Add col-4-8 - make col 1/5th width of row
+
+All spacer units changed:
+
+- Base on pixels but uses rem internally
+- Ex: pt-16 = padding-top: 1rem
+- Availble spacers:
+  - 1 - 50 (1 increment) Ex: pt-37, pt-44
+  - 50 - 100 (5 increment) Ex: pt-75, pt-95
+  - 100 - 500 (10 increment)
 
 Add font-size (f), width (ww), height (hh) classes, use regular spacer unit
 
-- Ex: f-16, f-md-16, ww-50, ww-xl-50
+- Ex: f-16, f-md-20, ww-200, ww-xl-300
 
 Add cpl, cpt, cml, cmt classes ( child padding/margin left/top)
 
 - will make all child **(except first)** have padding/margin
-- Ex: cpt-5 (All non-first child have 5rem padding top)
+- Ex: cpt-50, cpt-md-100
+- Variant (ccpl, ccpt, ccml, ccmt) but apply to first child as well
 
-Variant of the above (ccpl, ccpt, ccml, ccmt) but apply to first child as well
+Row gutters class ( Ex: g-0 ) ported from Bootstrap 5, use spacer units
 
-Row gutters class ( g-0 ) from Bootstrap 5, use spacer units
-
-Add in classes that were available in original bootstrap but not in bootstrap-grid
+Add classes that were available in original bootstrap but not in bootstrap-grid
 
 - Add width / height classes ( w-100, vw-100, ... )
 - Add text-align classes ( text-md-center, ... )
@@ -42,8 +50,7 @@ Add missing font-weight classes ( semi, bolder, black )
 Line height classes
 
 - Ex: lh-1-6 = line-height: 1.6, lh-md-1-8
-- Available values = 0.5 - 2-5, 0.1 increment
-
+- Available values = 0.5 - 2-5 (0.1 increment)
 
 TODO documentation for:
 
