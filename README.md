@@ -30,7 +30,9 @@ Add cpl, cpt, cml, cmt classes ( child padding/margin left/top)
 - Ex: cpt-50, cpt-md-100
 - Variant (ccpl, ccpt, ccml, ccmt) but apply to first child as well
 
-Row gutters class ( Ex: g-0 ) ported from Bootstrap 5, use spacer units
+Row gutters class:
+- like bootstrap 5
+- Ex: g-16, gx-md-16, gy-lg-16
 
 Add classes that were available in original bootstrap but not in bootstrap-grid
 - Add width / height classes ( w-100, vw-100, ... )

@@ -47,17 +47,38 @@
   }
 }
 
-// row spacers
-@each $spacerNum, $spacerValue in $spacers {
-  .row.g-#{$spacerNum} {
-    margin-left: -$spacerValue / 2;
-    margin-right: -$spacerValue / 2;
-    > [class*="col-"] {
-      padding-right: $spacerValue / 2;
-      padding-left: $spacerValue / 2;
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    // row spacers
+    @each $spacerNum, $spacerValue in $spacers {
+      .row.g#{$infix}-#{$spacerNum} {
+        margin: -$spacerValue / 2;
+        > [class*="col-"] {
+          padding: $spacerValue / 2;
+        }
+      }
+      .row.gx#{$infix}-#{$spacerNum} {
+        margin-left: -$spacerValue / 2;
+        margin-right: -$spacerValue / 2;
+        > [class*="col-"] {
+          padding-left: $spacerValue / 2;
+          padding-right: $spacerValue / 2;
+        }
+      }
+      .row.gy#{$infix}-#{$spacerNum} {
+        margin-top: -$spacerValue / 2;
+        margin-bottom: -$spacerValue / 2;
+        > [class*="col-"] {
+          padding-top: $spacerValue / 2;
+          padding-bottom: $spacerValue / 2;
+        }
+      }
     }
   }
 }
+
+
 
 // border-radius
 @for $i from 1 through 20 {
