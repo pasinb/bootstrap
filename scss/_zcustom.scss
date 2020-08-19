@@ -50,11 +50,11 @@
 // row spacers
 @each $spacerNum, $spacerValue in $spacers {
   .row.g-#{$spacerNum} {
-    margin-left: -$spacerValue;
-    margin-right: -$spacerValue;
+    margin-left: -$spacerValue / 2;
+    margin-right: -$spacerValue / 2;
     > [class*="col-"] {
-      padding-right: $spacerValue;
-      padding-left: $spacerValue;
+      padding-right: $spacerValue / 2;
+      padding-left: $spacerValue / 2;
     }
   }
 }
