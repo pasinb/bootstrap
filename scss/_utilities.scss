@@ -379,19 +379,19 @@ $utilities: map-merge(
       values: $spacers
     ),
     // Text
-    "font-weight": (
-      property: font-weight,
-      values: (
-        light: $font-weight-light,
-        lighter: $font-weight-lighter,
-        normal: $font-weight-normal,
-        medium: $font-weight-medium,
-        semi: $font-weight-semi,
-        bold: $font-weight-bold,
-        bolder: $font-weight-bolder,
-        black: $font-weight-black,
-      )
-    ),
+    // "font-weight": (
+    //   property: font-weight,
+    //   values: (
+    //     light: $font-weight-light,
+    //     lighter: $font-weight-lighter,
+    //     normal: $font-weight-normal,
+    //     medium: $font-weight-medium,
+    //     semi: $font-weight-semi,
+    //     bold: $font-weight-bold,
+    //     bolder: $font-weight-bolder,
+    //     black: $font-weight-black,
+    //   )
+    // ),
     "text-transform": (
       property: text-transform,
       class: text,

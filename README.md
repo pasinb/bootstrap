@@ -41,8 +41,8 @@ Add classes that were available in original bootstrap but not in bootstrap-grid
 - Add overflow classes ( overflow-auto, ... )
 - white-space classes ( .text-wrap, .text-nowrap, ...)
 
-Add missing font-weight classes ( semi, bolder, black )
-- Ex: font-weight-md-semi
+Shortened font-weight-class
+- .thin, .extra-light, .light, .regular, .medium, .semi-bold, .bold, .extra-bold, .black
 
 Line height classes:
 - Ex: lh-1-6 = line-height: 1.6, lh-md-1-8
