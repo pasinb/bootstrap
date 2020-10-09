@@ -149,6 +149,7 @@ $lh-list: (
 .d-grid {
   display: grid;
 }
+
 @for $i from 1 through 10 {
   .gcs-#{$i} {
     grid-column-start: $i;

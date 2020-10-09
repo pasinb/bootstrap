@@ -12,6 +12,8 @@
 
 Change column count from 12 to 24
 
+order-N classes count increased to 20
+
 Add col-4-8 - make col 1/5th width of row
 
 All spacer units changed:
