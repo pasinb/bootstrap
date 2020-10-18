@@ -58,11 +58,12 @@ z-index classes (no responsive):
 - Ex: z-1
 - Available values = 1 - 10 (1 increment)
 
+grid classes similar to tailwindcss (except responsive infix):
+- row/col start/end/span value = 1 - 10 and auto
+- Ex: .col-start-md-10, .row-span-md-10, .grid-flow-md-row, .grid-flow-xl-row-dense 
+
 TODO documentation for:
 - Add media print classes for margin and padding
-- Add basic display grid classes
-  - column/row start/end
-
 
 <p align="center">
   <a href="https://getbootstrap.com/">

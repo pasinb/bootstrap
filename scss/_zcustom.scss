@@ -134,6 +134,9 @@ $lh-list: (
       .hh#{$infix}-#{$num} {
         height: #{$value} !important;
       }
+      .gap#{$infix}-#{$num} {
+        grid-gap: #{$value} !important;
+      }
     }
   }
 }
@@ -149,19 +152,66 @@ $lh-list: (
 .d-grid {
   display: grid;
 }
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-@for $i from 1 through 10 {
-  .gcs-#{$i} {
-    grid-column-start: $i;
-  }
-  .gce-#{$i} {
-    grid-column-end: $i;
-  }
-  .grs-#{$i} {
-    grid-row-start: $i;
-  }
-  .gre-#{$i} {
-    grid-row-end: $i;
+    @for $i from 1 through 10 {
+      .col-start#{$infix}-#{$i} {
+        grid-column-start: $i;
+      }
+      .col-end#{$infix}-#{$i} {
+        grid-column-end: $i;
+      }
+      .col-span#{$infix}-#{$i} {
+        grid-column: span $i / span $i;
+      }
+      .row-start#{$infix}-#{$i} {
+        grid-row-start: $i;
+      }
+      .row-end#{$infix}-#{$i} {
+        grid-row-end: $i;
+      }
+      .row-span#{$infix}-#{$i} {
+        grid-row: span $i / span $i;
+      }
+      .grid-rows#{$infix}-#{$i} {
+        grid-template-rows: repeat(#{$i}, minmax(0, 1fr));
+      }
+      .grid-cols#{$infix}-#{$i} {
+        grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+      }
+    }
+    .col-auto {
+      grid-column: auto;
+    }
+    .col-start#{$infix}-auto {
+      grid-column-start: auto;
+    }
+    .col-end#{$infix}-auto {
+      grid-column-end: auto;
+    }
+    .row-auto {
+      grid-row: auto;
+    }
+    .row-start#{$infix}-auto {
+      grid-row-start: auto;
+    }
+    .row-end#{$infix}-auto {
+      grid-row-end: auto;
+    }
+    .grid-flow#{$infix}-row {
+      grid-auto-flow: row;
+    }
+    .grid-flow#{$infix}-col {
+      grid-auto-flow: column;
+    }
+    .grid-flow#{$infix}-row-dense {
+      grid-auto-flow: row dense;
+    }
+    .grid-flow#{$infix}-col-dense {
+      grid-auto-flow: column dense;
+    }
   }
 }
 
@@ -178,7 +228,7 @@ $lh-list: (
 }
 
 .regular {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .medium {
