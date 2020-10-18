@@ -137,6 +137,12 @@ $lh-list: (
       .gap#{$infix}-#{$num} {
         grid-gap: #{$value} !important;
       }
+      .gap-x#{$infix}-#{$num} {
+        column-gap: #{$value} !important;
+      }
+      .gap-y#{$infix}-#{$num} {
+        row-gap: #{$value} !important;
+      }
     }
   }
 }
