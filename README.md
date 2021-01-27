@@ -8,7 +8,7 @@
 
 # Changes from original bootstrap-grid:
 
-.container class removed - since projects have their own .container
+.container class removed since projects have their own .container
 
 Change column count from 12 to 24
 
@@ -43,12 +43,12 @@ Add classes that were available in original bootstrap but not in bootstrap-grid
 - Add overflow classes ( overflow-auto, ... )
 - white-space classes ( .text-wrap, .text-nowrap, ...)
 
-Shortened font-weight-class
+Shortened font-weight classes
 - .thin, .extra-light, .light, .regular, .medium, .semi-bold, .bold, .extra-bold, .black
 
 Line height classes:
 - Ex: lh-1-6 = line-height: 1.6, lh-md-1-8
-- Available values = 0.5 - 2-5 (0.1 increment)
+- Available values = 0.5 - 2-5 (0.05 increment)
 
 Border radius classes (no responsive):
 - Ex: br-1 = border-radius: 1px;
@@ -59,8 +59,10 @@ z-index classes (no responsive):
 - Available values = 1 - 10 (1 increment)
 
 grid classes similar to tailwindcss (except responsive infix):
-- row/col start/end/span value = 1 - 10 and auto
-- Ex: .col-start-md-10, .row-span-md-10, .grid-flow-md-row, .grid-flow-xl-row-dense 
+- grid-rows-N / grid-cols-N
+- grid-mrows-N / grid-mcols-N variant ( uses min-content instead of minmax(0, 1fr) )
+- row/col-start/end/span-N. value = 1 - 10 and auto
+- Ex: .grid-rows-1 .grid-cols-md-4 .col-start-md-10, .row-span-md-10, .grid-flow-md-row, .grid-flow-xl-row-dense 
 
 TODO documentation for:
 - Add media print classes for margin and padding
