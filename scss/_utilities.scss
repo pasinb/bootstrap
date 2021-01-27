@@ -179,6 +179,16 @@ $utilities: map-merge(
         around: space-around,
       )
     ),
+    "justify-items": (
+      responsive: true,
+      property: justify-items,
+      values: (
+        start: start,
+        end: end,
+        center: center,
+        stretch: stretch,
+      )
+    ),
     "align-items": (
       responsive: true,
       property: align-items,
