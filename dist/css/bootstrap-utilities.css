@@ -329,6 +329,22 @@
   justify-content: space-around !important;
 }
 
+.justify-items-start {
+  justify-items: start !important;
+}
+
+.justify-items-end {
+  justify-items: end !important;
+}
+
+.justify-items-center {
+  justify-items: center !important;
+}
+
+.justify-items-stretch {
+  justify-items: stretch !important;
+}
+
 .align-items-start {
   align-items: flex-start !important;
 }
@@ -9914,6 +9930,18 @@
   .justify-content-sm-around {
     justify-content: space-around !important;
   }
+  .justify-items-sm-start {
+    justify-items: start !important;
+  }
+  .justify-items-sm-end {
+    justify-items: end !important;
+  }
+  .justify-items-sm-center {
+    justify-items: center !important;
+  }
+  .justify-items-sm-stretch {
+    justify-items: stretch !important;
+  }
   .align-items-sm-start {
     align-items: flex-start !important;
   }
@@ -17124,6 +17152,18 @@
   }
   .justify-content-md-around {
     justify-content: space-around !important;
+  }
+  .justify-items-md-start {
+    justify-items: start !important;
+  }
+  .justify-items-md-end {
+    justify-items: end !important;
+  }
+  .justify-items-md-center {
+    justify-items: center !important;
+  }
+  .justify-items-md-stretch {
+    justify-items: stretch !important;
   }
   .align-items-md-start {
     align-items: flex-start !important;
@@ -24336,6 +24376,18 @@
   .justify-content-lg-around {
     justify-content: space-around !important;
   }
+  .justify-items-lg-start {
+    justify-items: start !important;
+  }
+  .justify-items-lg-end {
+    justify-items: end !important;
+  }
+  .justify-items-lg-center {
+    justify-items: center !important;
+  }
+  .justify-items-lg-stretch {
+    justify-items: stretch !important;
+  }
   .align-items-lg-start {
     align-items: flex-start !important;
   }
@@ -31546,6 +31598,18 @@
   }
   .justify-content-xl-around {
     justify-content: space-around !important;
+  }
+  .justify-items-xl-start {
+    justify-items: start !important;
+  }
+  .justify-items-xl-end {
+    justify-items: end !important;
+  }
+  .justify-items-xl-center {
+    justify-items: center !important;
+  }
+  .justify-items-xl-stretch {
+    justify-items: stretch !important;
   }
   .align-items-xl-start {
     align-items: flex-start !important;
