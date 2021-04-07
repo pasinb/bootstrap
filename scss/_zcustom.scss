@@ -157,16 +157,16 @@ $lh-list: (
       .hh#{$infix}-#{$num} {
         height: #{$value} !important;
       }
-      .max-w#{$infix}-#{$num} {
+      .maxw#{$infix}-#{$num} {
         max-width: #{$value} !important;
       }
-      .max-h#{$infix}-#{$num} {
+      .maxh#{$infix}-#{$num} {
         max-height: #{$value} !important;
       }
-      .min-w#{$infix}-#{$num} {
+      .minw#{$infix}-#{$num} {
         min-width: #{$value} !important;
       }
-      .min-h#{$infix}-#{$num} {
+      .minh#{$infix}-#{$num} {
         min-height: #{$value} !important;
       }
       .gap#{$infix}-#{$num} {

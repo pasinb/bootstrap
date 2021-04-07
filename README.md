@@ -28,13 +28,13 @@ All spacer units changed:
 Add font-size (f) classes. Use regular spacer unit
 - Ex: f-16, f-md-20, ww-200, ww-xl-300
 
-Add width (ww), min-width (min-w), max-width (max-w) classes (along with height counterpart). Use regular spacer unit
+Add width (ww), min-width (minw), max-width (maxw) classes (along with height counterpart). Use regular spacer unit
 - Avoids collision with original bootstrap classes ( w-, mw- )
 - Ex: 
   - ww-16: width: 1rem;
   - hh-1000
   - ww-md-50
-  - min-h-lg-200
+  - minh-lg-200
 
 Add cpl, cpt, cml, cmt classes ( child padding/margin left/top)
 - will make all child **(except first)** have padding/margin
