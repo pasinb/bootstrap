@@ -17,6 +17,7 @@ order-N classes count increased to 20
 Add col-4-8 - make col 1/5th width of row
 
 All spacer units changed:
+
 - Base on pixels but uses rem internally
 - Ex: pt-16 = padding-top: 1rem
 - Availble spacers:
@@ -26,26 +27,43 @@ All spacer units changed:
   - 500 - 2000 (50 increment)
 
 Add font-size (f) classes. Use regular spacer unit
+
 - Ex: f-16, f-md-20, ww-200, ww-xl-300
 
 Add width (ww), min-width (minw), max-width (maxw) classes (along with height counterpart). Use regular spacer unit
+
 - Avoids collision with original bootstrap classes ( w-, mw- )
-- Ex: 
+- Ex:
   - ww-16: width: 1rem;
   - hh-1000
   - ww-md-50
   - minh-lg-200
 
+Add percent / viewport classes:
+
+- Availble spacers:
+  - 5 - 100 (5 increment)
+- w-Np = width: N%
+- minw-Np = min-width: N%
+- maxw-Np = max-width: N%
+- w-Nv = width: Nvw;
+- minw-Nv = min-width: Nvw;
+- maxw-Nv = max-width: Nvw;
+- (+ height counterpart and responsive) Ex: maxh-lg-50v = max-height: 50vh;
+
 Add cpl, cpt, cml, cmt classes ( child padding/margin left/top)
+
 - will make all child **(except first)** have padding/margin
 - Ex: cpt-50, cpt-md-100
 - Variant (ccpl, ccpt, ccml, ccmt) but apply to first child as well
 
 Row gutters class:
+
 - like bootstrap 5
 - Ex: g-16, gx-md-16, gy-lg-16
 
 Add classes that were available in original bootstrap but not in bootstrap-grid
+
 - Add width / height classes ( w-100, vw-100, ... )
 - Add text-align classes ( text-md-center, ... )
 - Add position classes ( position-absolute, ... )
@@ -53,33 +71,39 @@ Add classes that were available in original bootstrap but not in bootstrap-grid
 - white-space classes ( .text-wrap, .text-nowrap, ...)
 
 Shortened font-weight classes and add responsive
+
 - .thin, .extra-light, .light, .regular, .medium, .semi-bold, .bold, .extra-bold, .black
 - .medium-lg
 
 Line height classes:
+
 - Ex: lh-1-6 = line-height: 1.6, lh-md-1-8
 - Available values = 0.5 - 2-5 (0.05 increment)
 
 Border radius and border width classes (no responsive):
+
 - Ex: br-1 = border-radius: 1px;
 - Ex: bw-2 = border-width: 2px;
 - Available values = 1 - 20 (1 increment)
 
 z-index classes (no responsive):
+
 - Ex: z-1
 - Available values = 1 - 10 (1 increment)
 
 grid classes similar to tailwindcss (except responsive infix which followed bootstrap style):
+
 - d-grid
 - grid-rows-N / grid-cols-N
 - grid-mrows-N / grid-mcols-N variant ( uses min-content instead of minmax(0, 1fr) )
 - grid-arows-N / grid-acols-N variant ( uses auto )
 - row/col-start/end/span-N. value = 1 - 10 and auto
-- Ex: .grid-rows-1 .grid-cols-md-4 .col-start-md-10, .row-span-md-10, .grid-flow-md-row, .grid-flow-xl-row-dense 
+- Ex: .grid-rows-1 .grid-cols-md-4 .col-start-md-10, .row-span-md-10, .grid-flow-md-row, .grid-flow-xl-row-dense
 - grid gap classes
   - Ex: .gap-10 .gap-md-10 .gap-x-lg-15 .gap-y-20
 
 TODO documentation for:
+
 - Add media print classes for margin and padding
 
 <p align="center">
