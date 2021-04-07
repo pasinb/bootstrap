@@ -83,6 +83,9 @@
   .br-#{$i} {
     border-radius: #{$i}px !important;
   }
+  .bw-#{$i} {
+    border-width: #{$i}px !important;
+  }
 }
 
 $lh-list: (
@@ -154,6 +157,18 @@ $lh-list: (
       .hh#{$infix}-#{$num} {
         height: #{$value} !important;
       }
+      .max-w#{$infix}-#{$num} {
+        max-width: #{$value} !important;
+      }
+      .max-h#{$infix}-#{$num} {
+        max-height: #{$value} !important;
+      }
+      .min-w#{$infix}-#{$num} {
+        min-width: #{$value} !important;
+      }
+      .min-h#{$infix}-#{$num} {
+        min-height: #{$value} !important;
+      }
       .gap#{$infix}-#{$num} {
         grid-gap: #{$value} !important;
       }
@@ -174,10 +189,6 @@ $lh-list: (
   }
 }
 
-// grid stuff
-.d-grid {
-  display: grid;
-}
 @each $breakpoint in map-keys($grid-breakpoints) {
   @include media-breakpoint-up($breakpoint) {
     $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
@@ -212,6 +223,12 @@ $lh-list: (
       }
       .grid-mcols#{$infix}-#{$i} {
         grid-template-columns: repeat(#{$i}, min-content);
+      }
+      .grid-arows#{$infix}-#{$i} {
+        grid-template-rows: repeat(#{$i}, auto);
+      }
+      .grid-acols#{$infix}-#{$i} {
+        grid-template-columns: repeat(#{$i}, auto);
       }
     }
     .col-auto {
@@ -281,4 +298,45 @@ $lh-list: (
 
 .black {
   font-weight: 900;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+    .thin#{$infix} {
+      font-weight: 100;
+    }
+
+    .extra-light#{$infix} {
+      font-weight: 200;
+    }
+
+    .light#{$infix} {
+      font-weight: 300;
+    }
+
+    .regular#{$infix} {
+      font-weight: 400;
+    }
+
+    .medium#{$infix} {
+      font-weight: 500;
+    }
+
+    .semi-bold#{$infix} {
+      font-weight: 600;
+    }
+
+    .bold#{$infix} {
+      font-weight: 700;
+    }
+
+    .extra-bold#{$infix} {
+      font-weight: 800;
+    }
+
+    .black#{$infix} {
+      font-weight: 900;
+    }
+  }
 }

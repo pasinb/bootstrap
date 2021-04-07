@@ -23,9 +23,18 @@ All spacer units changed:
   - 1 - 50 (1 increment) Ex: pt-37, pt-44
   - 50 - 100 (5 increment) Ex: pt-75, pt-95
   - 100 - 500 (10 increment)
+  - 500 - 2000 (50 increment)
 
-Add font-size (f), width (ww), height (hh) classes, use regular spacer unit
+Add font-size (f) classes. Use regular spacer unit
 - Ex: f-16, f-md-20, ww-200, ww-xl-300
+
+Add width (ww), min-width (min-w), max-width (max-w) classes (along with height counterpart). Use regular spacer unit
+- Avoids collision with original bootstrap classes ( w-, mw- )
+- Ex: 
+  - ww-16: width: 1rem;
+  - hh-1000
+  - ww-md-50
+  - min-h-lg-200
 
 Add cpl, cpt, cml, cmt classes ( child padding/margin left/top)
 - will make all child **(except first)** have padding/margin
@@ -43,26 +52,32 @@ Add classes that were available in original bootstrap but not in bootstrap-grid
 - Add overflow classes ( overflow-auto, ... )
 - white-space classes ( .text-wrap, .text-nowrap, ...)
 
-Shortened font-weight classes
+Shortened font-weight classes and add responsive
 - .thin, .extra-light, .light, .regular, .medium, .semi-bold, .bold, .extra-bold, .black
+- .medium-lg
 
 Line height classes:
 - Ex: lh-1-6 = line-height: 1.6, lh-md-1-8
 - Available values = 0.5 - 2-5 (0.05 increment)
 
-Border radius classes (no responsive):
+Border radius and border width classes (no responsive):
 - Ex: br-1 = border-radius: 1px;
+- Ex: bw-2 = border-width: 2px;
 - Available values = 1 - 20 (1 increment)
 
 z-index classes (no responsive):
 - Ex: z-1
 - Available values = 1 - 10 (1 increment)
 
-grid classes similar to tailwindcss (except responsive infix):
+grid classes similar to tailwindcss (except responsive infix which followed bootstrap style):
+- d-grid
 - grid-rows-N / grid-cols-N
 - grid-mrows-N / grid-mcols-N variant ( uses min-content instead of minmax(0, 1fr) )
+- grid-arows-N / grid-acols-N variant ( uses auto )
 - row/col-start/end/span-N. value = 1 - 10 and auto
 - Ex: .grid-rows-1 .grid-cols-md-4 .col-start-md-10, .row-span-md-10, .grid-flow-md-row, .grid-flow-xl-row-dense 
+- grid gap classes
+  - Ex: .gap-10 .gap-md-10 .gap-x-lg-15 .gap-y-20
 
 TODO documentation for:
 - Add media print classes for margin and padding
